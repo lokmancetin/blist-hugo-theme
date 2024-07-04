@@ -1,6 +1,11 @@
 <!DOCTYPE html>
 <html lang="{{ .Lang }}" itemscope itemtype="http://schema.org/WebPage">
   {{- partial "head.html" . -}}
+  <head>
+    {{ if .Site.Params.GoogleAnalyticsID }}
+    {{ partial "analytics-gtag.html" . }}
+    {{ end }}
+   </head>
   <body class="dark:bg-gray-800 dark:text-white relative flex flex-col min-h-screen">
     {{- partial "header.html" . -}}
     <main class="flex-1">
