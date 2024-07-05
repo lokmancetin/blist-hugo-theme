@@ -53,3 +53,10 @@
     display: none;
   }
 }
+
+img,
+video {
+  max-width: 100%;
+  height: auto;
+  max-height: 600px; /* max-height stilini ekleyin */
+}
